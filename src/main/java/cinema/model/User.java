@@ -6,7 +6,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Arrays;
 
 @Entity
 @Table(name = "users")
@@ -55,7 +54,6 @@ public class User {
     public String toString() {
         return "User{"
                 + "id=" + id
-                + ", email='" + email + '\''
-                + ", salt=" + Arrays.toString(salt) + '}';
+                + ", email='" + email;
     }
 }
